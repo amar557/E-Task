@@ -7,8 +7,12 @@ import orderRouter from "./routes/orders.route.js";
 import dotenv from "dotenv";
 dotenv.config();
 const app = express();
-
-app.use(cors());
+const corspolicy = {
+  origin: "*",
+  Credential: true,
+  method: ["GET", "POST", "PUT", "DELETE"],
+};
+app.use(cors(corspolicy));
 app.use(express.json());
 app.get("/route", (req, res) => res.send("its workon"));
 app.use("/api", itemRouter);

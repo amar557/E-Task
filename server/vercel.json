@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "task",
+  "name": "music-album",
   "builds": [{ "src": "index.js", "use": "@vercel/node" }],
   "routes": [{ "src": "/(.*)", "dest": "/index.js" }]
 }
