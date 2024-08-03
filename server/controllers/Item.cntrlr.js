@@ -5,7 +5,7 @@ export const uploadItem = async function (req, res, next) {
   try {
     const item = req.body;
     const upladedItem = await Item(item);
-    upladedItem.save();
+    await upladedItem.save();
     res.send(upladedItem);
   } catch (error) {
     res.status(400).send(error);
