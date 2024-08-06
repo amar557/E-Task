@@ -1,1 +1,1 @@
-export const link = `https://e-task-lac.vercel.app`;
+export const link = `https://e-task-server.vercel.app`;
