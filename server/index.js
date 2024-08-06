@@ -22,6 +22,10 @@ app.listen(3000, () => {
   console.log("Server is running on port 3000");
 });
 
-mongoose.connect(process.env.MONGODB_URI).then(() => {
-  console.log("MongoDB connected");
-});
+mongoose
+  .connect(
+    "mongodb+srv://amarhussain391:hsB6wDJQEwcBpxHU@cluster0.jsusrjl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+  )
+  .then(() => {
+    console.log("MongoDB connected");
+  });
